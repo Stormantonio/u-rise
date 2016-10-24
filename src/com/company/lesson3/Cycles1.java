@@ -12,7 +12,7 @@ package com.company.lesson3;
  */
 public class Cycles1 {
     public static void main(String[] args) {
-        int minAge = 5;
+        /*int minAge = 5;
         int maxAge = 15;
 
         for (int i = minAge; i < maxAge; i++) {
@@ -32,7 +32,34 @@ public class Cycles1 {
                     }
                 }
             }
+        }*/
 
+        // какой-то человек очень классно решил задачу
+        double[] otvmas = {30, 32, 32, 35};
+        int min = 5;
+        int max = 15;
+        int sum123 = 0, sum234 = 0, sum341 = 0, sum412 = 0;
+
+        for (int i = min; i < max; i++) {
+            for (int j = min; j < max; j++) {
+                for (int k = min; k < max; k++) {
+                    for (int l = min; l < max; l++) {
+                        sum123 = i + j + k;
+                        sum234 = j + k + l;
+                        sum341 = k + l + i;
+                        sum412 = l + i + j;
+                        if (sum123 == otvmas[0] && sum234 == otvmas[1] && sum341 == otvmas[2] && sum412 == otvmas[3]) {
+                            System.out.println("Возраст первого брата " + i);
+                            System.out.println("Возраст второго брата " + j);
+                            System.out.println("Возраст третьего брата " + k);
+                            System.out.println("Возраст четвертого брата " + l);
+                        }
+
+                    }
+
+                }
+
+            }
 
         }
     }
