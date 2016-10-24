@@ -1,7 +1,5 @@
 package com.company.lesson6;
 
-import com.sun.corba.se.spi.ior.IdentifiableFactory;
-
 /**
  * Created by Asus on 24.10.2016.
  */
