@@ -34,5 +34,17 @@ public class Chess {
             System.out.println("\n-------------------------");
         }
 
+        System.out.println();
+        System.out.println("Решение с другого вебинара:");
+        int boardSize = 8;
+        String[] s = {"a", "b", "c", "d", "e", "f", "g", "h"};
+        for (int i = 0; i < boardSize; i++) {
+            for (int j = 0; j < boardSize; j++) {
+                System.out.print(s[j] + (boardSize - i) + "|");
+            }
+            System.out.println();
+            System.out.println("------------------------");
+        }
+
     }
 }
