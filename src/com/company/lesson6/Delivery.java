@@ -15,32 +15,45 @@ public class Delivery {
         int ships = containers / containersInShip;
         int containerBalance = containers % containersInShip;
 
+        if (containerBalance != 0) {
+            System.out.println("Need ships: " + ++ships);
+            ships--;
+        } else {
+            System.out.println("Need ships: " + ships);
+        }
+        if (boxesBalance != 0) {
+            System.out.println("Need containers: " + ++containers);
+            containers--;
+        } else {
+            System.out.println("Need containers: " + containers);
+        }
+
         for (int i = 1; i <= ships; i++) {
             System.out.println();
-            System.out.println("Ship " + i);
+            System.out.println("Ship: " + i);
             for (int j = 1; j <= containersInShip; j++) {
-                System.out.println("Container " + j);
+                System.out.println("Container: " + j);
                 for (int k = 1; k <= boxesInContainer; k++) {
-                    System.out.println("Box " + k);
+                    System.out.println("Box: " + k);
                 }
             }
         }
 
-        if (boxesBalance != 0) {
+        if (containerBalance != 0) {
             System.out.println();
-            System.out.println("Ship " + ++ships);
+            System.out.println("Ship: " + ++ships);
             for (int i = 1; i <= containerBalance; i++) {
-                System.out.println("Container " + i);
+                System.out.println("Container: " + i);
                 for (int j = 1; j <= boxesInContainer; j++) {
-                    System.out.println("Box " + j);
+                    System.out.println("Box: " + j);
                 }
             }
         }
 
         if (boxesBalance != 0) {
-            System.out.println("Container " + ++containerBalance);
+            System.out.println("Container: " + ++containerBalance);
             for (int i = 1; i <= boxesBalance; i++) {
-                System.out.println("Box " + i);
+                System.out.println("Box: " + i);
             }
         }
     }
