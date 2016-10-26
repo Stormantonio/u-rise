@@ -15,8 +15,7 @@ public class Bones {
             for (int i = 0; i < 1000000; i++) {
                 int boneValue1 = (int) (1 + Math.random() * 6);
                 int boneValue2 = (int) (1 + Math.random() * 6);
-                int valueSum = boneValue1 + boneValue2;
-                if ((j + 1) == valueSum) {
+                if ((j + 1) == boneValue1 + boneValue2) {
                     count++;
                 }
             }
@@ -43,7 +42,6 @@ public class Bones {
             for (int j = 0; j < 1000000; j++) {
                 int boneValue1 = (int) (1 + Math.random() * 6);
                 int boneValue2 = (int) (1 + Math.random() * 6);
-
                 if (i == boneValue1 + boneValue2) {
                     count++;
                 }
