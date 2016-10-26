@@ -1,12 +1,17 @@
 package com.company.lesson6;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.DoubleSummaryStatistics;
+
 /**
  * Created by Asus on 24.10.2016.
  */
 public class Delivery {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
 
-        int boxes = 3000;
+        /*int boxes = 3000;
         int boxesInContainer = 34;
         int containersInShip = 11;
 
@@ -55,6 +60,65 @@ public class Delivery {
             for (int i = 1; i <= boxesBalance; i++) {
                 System.out.println("Box: " + i);
             }
+        }*/
+
+
+        /*// хорошее решение
+        int container = 11;
+        int box = 34;
+
+        double countShip = 0;
+        double countContainer = 0;
+        double countBox = 0;
+        double shipContainerBox = container * box;
+
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        countBox = Double.parseDouble(reader.readLine());
+
+        countContainer = Math.ceil(countBox / box);
+        countShip = Math.ceil(countBox / shipContainerBox);
+
+        System.out.println("Общее кол-во контейнеров: " + countContainer);
+        System.out.println("Кол-во кораблей: " + countShip);
+        System.out.println("----------------------------------------");
+
+        for (int i = 0; i < countShip; i++) {
+            System.out.println("Корабль " + (i + 1));
+            for (int j = 0; j < container; j++) {
+                if (countContainer == 0)
+                    continue;
+                countContainer--;
+                System.out.println("Контейнер " + (j + 1));
+                for (int k = 0; k < box; k++) {
+                    if (countBox == 0)
+                        continue;
+                    countBox--;
+                    System.out.println("Ящик " + (k + 1));
+                }
+            }
+        }*/
+
+        // решение Стаса
+        System.out.println("Введите, пожалуйста, количество ящиков с провизией для высадки на Марс....");
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        int countBoxes = Integer.parseInt(reader.readLine());
+        int countTrucks = 0;
+        int countContainers = 0;
+        int boxesInContainer = 27;
+        int containersInTruck = 12;
+
+        for (int i = 0; i < countBoxes; i++) {
+            if (i % (containersInTruck * boxesInContainer) == 0) {
+                System.out.println("Грузовик " + (countTrucks + 1));
+                countTrucks++;
+            }
+            if (i % boxesInContainer == 0) {
+                System.out.println("Контейнер " + (countContainers + 1));
+                countContainers++;
+            }
+            System.out.println("Ящик " + (i +1));
         }
+        System.out.println("Всего грузовиков: " + countTrucks);
+        System.out.println("Всего контейнеров: " + countContainers);
     }
 }
