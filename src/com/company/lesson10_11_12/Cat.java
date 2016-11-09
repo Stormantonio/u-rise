@@ -1,4 +1,4 @@
-package com.company.lesson10;
+package com.company.lesson10_11_12;
 
 import java.text.DecimalFormat;
 import java.text.DecimalFormatSymbols;
