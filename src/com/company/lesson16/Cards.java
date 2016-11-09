@@ -8,11 +8,11 @@ import java.util.ArrayList;
  */
 public class Cards {
     public static void main(String[] args) {
-        final int cardsSize = 36;
+        final int CARDSSIZE = 36;
         ArrayList<String> cards = new ArrayList<>();
         String newCard;
         for (; ; ) {
-            if (cards.size() == cardsSize)
+            if (cards.size() == CARDSSIZE)
                 break;
             int mastCard = (int) (Math.random() * 4) + 1;
             if (mastCard == 1) {
