@@ -2,6 +2,7 @@ package com.company.lesson7;
 
 /**
  * Created by Anton on 25.10.2016.
+ * Вывести в консоль шахматную доску, в виде специальных character
  */
 public class Chessboard {
     public static void main(String[] args) {

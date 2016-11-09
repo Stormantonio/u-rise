@@ -4,6 +4,7 @@ import java.nio.charset.MalformedInputException;
 
 /**
  * Created by Asus on 19.10.2016.
+ * Правильно определить возрасты людей не смотря на то, что они могут меняться
  */
 public class BooleanType {
 

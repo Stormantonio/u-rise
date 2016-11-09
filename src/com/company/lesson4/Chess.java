@@ -2,6 +2,7 @@ package com.company.lesson4;
 
 /**
  * Created by Asus on 20.10.2016.
+ * * Вывести в консоль шахманую доску в текстовом в виде.
  */
 public class Chess {
     public static void main(String[] args) {

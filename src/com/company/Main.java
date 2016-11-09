@@ -1,5 +1,8 @@
 package com.company;
 
+/*
+* распечатать текст: "Коле уже 18 лет, он ростом 1.8 метра"
+ */
 public class Main {
 
     public static void main(String[] args) {

@@ -2,6 +2,7 @@ package com.company.lesson7;
 
 /**
  * Created by Anton on 24.10.2016.
+ * Вывести в консоль, номера кириллических  символов (то есть русских, привычных нам)
  */
 public class Alphabet {
     public static void main(String[] args) {

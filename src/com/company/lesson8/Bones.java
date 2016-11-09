@@ -3,6 +3,7 @@ package com.company.lesson8;
 
 /**
  * Created by Anton on 26.10.2016.
+ * попробовать посчитать какая сумма баллов  2-х игральных  костей (кубиков от 1 до 6) , выпадает чаще всего.
  */
 public class Bones {
     public static void main(String[] args) {

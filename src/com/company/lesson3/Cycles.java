@@ -2,6 +2,7 @@ package com.company.lesson3;
 
 /**
  * Created by Anton on 19.10.2016.
+ * Вывести в консоль количество негритят оставшихся за столом от 10, и уменьшающееся в цикле.
  */
 public class Cycles {
     public static void main(String[] args) {

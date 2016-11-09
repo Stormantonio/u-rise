@@ -2,6 +2,8 @@ package com.company.lesson4;
 
 /**
  * Created by Asus on 20.10.2016.
+ * сделать инверсию массива, (перевернуть массив, первый элемент массива  сделать последним, а послений первым,
+ * второй предпоследним и так далее...)
  */
 public class Arrays {
     public static void main(String[] args) {

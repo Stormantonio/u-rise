@@ -2,6 +2,7 @@ package com.company.lesson6;
 
 /**
  * Created by Asus on 24.10.2016.
+ * Вывести  в консоль все простые числа от встречающиеся от 0 до 10000
  */
 public class Primes {
     public static void main(String[] args) {
