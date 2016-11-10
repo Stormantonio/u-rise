@@ -49,8 +49,8 @@ public class Cars {
                     } else {
                         for (int i = cars.size() - 1; i >= 0; i--) {
                             System.out.println("Автомобиль " + cars.remove(i) + " выехал!");
-                            System.out.println("Гараж пуст!");
                         }
+                        System.out.println("Гараж пуст!");
                     }
                     break;
                 default:
