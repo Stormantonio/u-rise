@@ -17,10 +17,9 @@ public class CarOwners {
     public static void main(String[] args) throws IOException {
         TreeMap<String, String> cars = new TreeMap<>();
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        String command;
         for (; ; ) {
             System.out.println("Введите номер автомобиля или команду: LIST - посмотреть всю базу номеров автомобилей | HELP - справка | EXIT - выход");
-            command = reader.readLine().toUpperCase().trim();
+            String command = reader.readLine().toUpperCase().trim();
             if (command.equals("LIST")) {
                 if (cars.isEmpty()) {
                     System.out.println("В базе нет ни одного автомобиля!");
@@ -52,7 +51,6 @@ public class CarOwners {
             } else
                 System.out.println("Неверный ввод!");
         }
-
     }
 
     private static Pattern pattern = Pattern.compile("^([АВЕІКМНОРСТХABCEIKHMOPTX]{2}[\\d]{4}|([012]\\d\\-\\d\\d\\d\\-\\d\\d))[АВЕІКМНОРСТХABCEIKHMOPTX]{2}$");
